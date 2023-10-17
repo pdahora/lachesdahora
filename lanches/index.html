@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Lanchonete</title>
+</head>
+
+<body>
+    <header>
+        <h1>Lanchonete Hora</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Conheça um pouco mais sobre nossa lanchonete e nossa história.</p>
+    </section>
+    <section id="cardapio">
+        <h2>Cardápio</h2>
+
+        <ul>
+            <li>
+                <h3>Coxinha</h3>
+                <p>Coxinha de frango com queijo mussarela e calabresa R$ 8,00. <button
+                        onclick="adicionarAoCarrinho('Coxinha', 8.00)">Adicionar ao Carrinho</button></p>
+            </li>
+
+            <li>
+                <h3>Hamburguer</h3>
+                <p>Delicioso hamburguer com queijo, carne, alface, tomate e maionese R$ 10,00. <button
+                        onclick="adicionarAoCarrinho('Hamburguer', 10.00)">Adicionar ao Carrinho</button></p>
+            </li>
+            <li>
+                <h3>Batata Frita</h3>
+                <p>Crocantes e saborosas batatas fritas R$ 5,00. <button
+                        onclick="adicionarAoCarrinho('Batata Frita', 5.00)">Adicionar ao Carrinho</button></p>
+            </li>
+            <li>
+                <h3>Refrigerantes</h3>
+                <p>Diversas opções de refrigerantes para acompanhar sua refeição R$ 3,50. <button
+                        onclick="adicionarAoCarrinho('Refrigerante', 3.50)">Adicionar ao Carrinho</button></p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <ul id="carrinho-lista">
+            <!-- Os itens do carrinho serão exibidos aqui -->
+        </ul>
+        <p id="total">Total: R$ 0.00</p>
+    </section>
+
+    <footer>
+        <h3>9-91020001</h3>
+        <h4>Email: delicia@gmail.com</h4>
+        <p>&copy; 2023 Lanchonete Hora</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
